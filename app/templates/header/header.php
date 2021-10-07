@@ -4,7 +4,7 @@
     define( '__CONFIG__', true );
     
     // Then require the config file
-    require_once "includes/config.inc.php";
+    require_once "../../includes/config.inc.php";
 
 ?>
 
@@ -27,6 +27,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
     <!-- CUSTOM CSS-->
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="assets/custom.css">
 
 </head>

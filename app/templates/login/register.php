@@ -4,7 +4,7 @@
     define( '__CONFIG__', true );
     
     // Then require the config file
-    require_once "../../includes/config.inc.php";
+    require_once "../../../includes/config.inc.php";
 
 ?>
 
@@ -37,7 +37,7 @@
             <article class="card-body mx-auto" style="max-width: 400px;">
                 <h4 class="card-title mt-3 text-center">Create Account</h4>
                 <p class="text-center">Get started with your free account</p>
-                <form>
+                <form id="js-register">
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
@@ -54,13 +54,13 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                         </div>
-                        <input name="email" class="form-control" placeholder="Email address" type="text">
+                        <input name="email" class="form-control" placeholder="Email address" type="email">
                     </div> <!-- form-group// -->
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                         </div>
-                        <input class="form-control" placeholder="Create password" type="text">
+                        <input class="form-control" placeholder="Create password" type="password">
                     </div> <!-- form-group// -->
                     <div class="form-group input-group">
                         <div class="input-group-prepend">
@@ -71,8 +71,14 @@
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary btn-block"> Create Account </button>
                     </div> <!-- form-group// -->
-                    <p class="text-center">Have an account? <a href="templates/login/login.php">Log In</a> </p>
+                    <p class="text-center">Have an account? <a href="login.php">Log In</a> </p>
                 </form>
+
+
+                <div class='text-center text-danger js-error' style='display: none;'></div>
+
+                <p class='text-center text-success js-success'></p>
+
                 <p>
                     <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
                     <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via
@@ -83,3 +89,9 @@
 
     </div>
     <!--container end.//-->
+
+    <?php require_once "../footer/footer.php"; ?>
+
+</body>
+
+</html>

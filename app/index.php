@@ -4,7 +4,7 @@
     define( '__CONFIG__', true );
     
     // Then require the config file
-    require_once "includes/config.inc.php";
+    require_once "../includes/config.inc.php";
 
 ?>
 

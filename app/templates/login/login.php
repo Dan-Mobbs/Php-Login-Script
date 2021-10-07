@@ -4,7 +4,7 @@
     define( '__CONFIG__', true );
     
     // Then require the config file
-    require_once "../../includes/config.inc.php";
+    require_once "../../../includes/config.inc.php";
 
 ?>
 
@@ -53,6 +53,7 @@
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary btn-block"> login </button>
                     </div> <!-- form-group// -->
+                    <p class="text-center">Need to register an account?<a href="register.php">Register Account</a> </p>
                 </form>
                 <p>
                     <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via
@@ -65,3 +66,9 @@
 
     </div>
     <!--container end.//-->
+
+    <?php require_once "../footer/footer.php"; ?>
+
+</body>
+
+</html>
