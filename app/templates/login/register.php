@@ -72,10 +72,11 @@
                         <button type="submit" class="btn btn-primary btn-block"> Create Account </button>
                     </div> <!-- form-group// -->
                     <p class="text-center">Have an account? <a href="login.php">Log In</a> </p>
+                    <div class='text-center text-danger js-error' style='display: none;'></div>
                 </form>
 
 
-                <div class='text-center text-danger js-error' style='display: none;'></div>
+
 
                 <p class='text-center text-success js-success'></p>
 
